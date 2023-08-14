@@ -19,7 +19,7 @@ MAIN_MENU(){
 
   MAX_SERVICE_ID=$($PSQL "SELECT max(service_id) FROM services")
 
-  if [[ ! $SERVICE_ID_SELECTED =~ ^[1-6]+$ ]]
+  if [[ ! $SERVICE_ID_SELECTED =~ ^[1-$(echo $MAX_SERVICE_ID)]+$ ]]
   then
 	  MAIN_MENU "I could not find that service. What would you like today?"
   else
