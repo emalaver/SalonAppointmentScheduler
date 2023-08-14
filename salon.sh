@@ -61,4 +61,4 @@ MAIN_MENU(){
   fi
 }
 
-MAIN_MENU "Welcome to The reformatted beauty, how can I help you?"
+MAIN_MENU "Welcome to My salon, how can I help you?"
